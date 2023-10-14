@@ -1,0 +1,102 @@
+.Card {
+  width: 300px;
+  height: 250px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  border-radius: 9px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.Card:hover {
+  transform: scale(1);
+  transition: all ease-in-out 0.3s;
+  box-shadow: 6px 4px 10px 0px rgba(173, 167, 167, 0.78);
+}
+
+.Card .card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f1f1f1;
+  position: relative;
+}
+.Card .card-img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.Card .card-img span {
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 11px;
+  border-top-left-radius: 8px;
+  background: #fff;
+  font-weight: 600;
+}
+.Card .card-img button {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+}
+.active {
+    color: #ffd600;
+}
+
+.Card .card-title {
+  padding: 0 22px;
+  background: #fff;
+}
+.Card .card-title p {
+  font-size: 18px;
+  font-weight: 600;
+}
+:where(.css-dev-only-do-not-override-amq5gd).ant-rate {
+  font-size: 12px;
+}
+
+.modal-components img{
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+}
+
+.recipe-ingredients h3,
+.recipe-preparation h3{
+    text-align: center;
+    font-size: 17px;
+}
+.recipe-ingredients p
+,.recipe-preparation p{
+    padding: 0 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+.recipe-preparation {
+    background: rgba(252, 213, 220, 0.363);
+    padding: 10px;
+    border-radius: 9px;
+}
+.recipe-time{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.recipe-time p{
+    font-style: italic ;
+    font-weight: 700;
+    color: #ff7b00;
+}
